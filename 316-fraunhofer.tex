@@ -17,6 +17,7 @@
 \usepackage{graphicx}
 \usepackage{pdfpages}
 \usepackage{url}
+\usepackage{subcaption}
 
 \usepackage{siunitx}
 \sisetup{locale = DE}  %, separate-uncertainty = true    kdybych chtel +/-
@@ -36,22 +37,26 @@
 
 \bibliography{source}
 
+\newcommand{\uhel}[3]{\ang{#1 ; #2 ; #3}}
+
 \begin{document}
 
 \begin{titlepage}
-\includepdf[pages={1}]{./graficos/316-tit.pdf}
+\includepdf[pages={1}]{./graficos/titlelist.pdf}
 \end{titlepage}
 
 \section*{Pracovní úkoly}
 \begin{enumerate}
-\item ÚKOLY
+\item Seřiďte goniometr.
+\item Změřte lámavý úhel skleněného hranolu a proměřte indexy lomu čar spektra rtuťové výbojky.
+\item Změřte lámavý úhel kyvety a proměřte pro přiloženou kapalinu indexy lomu čar spektra rtuťové výbojky.
+\item Naměřené hodnoty zpracujte graficky do disperzních křivek. Vypočtěte střední disperzi, relativní disperzi a Abbeovo číslo pro změřené materiály.
+\item Odvoďte výraz pro chybu nepřímého měření indexu lomu. Spočtěte její velikost a diskutujte, kolik desetinných míst indexu lomu tato metoda zaručuje.
+
 \end{enumerate}
 
 %Teoretická část
 \input{teorie.tex}
-
-%Podmínky a měřící přístroje
-\input{podminky.tex}
 
 %Výsledky měření
 \input{vysledky.tex}
